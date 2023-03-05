@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+html,body{
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.left{
+    width: 28vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instaImage{
+    width: 100%;
+}
+.left img{
+    width: 100%;
+}
+.top{
+    border-radius: 1px;
+    border: 1px solid lightgrey;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.right{
+    margin: 0 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 27vw;
+    
+}
+.loginInstaImg{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.input:focus{
+    border: 1px solid grey;
+    outline: none;
+}
+.error{
+    color:#ed4d59;
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 1rem 2rem 2rem 2rem ;
+    font-family: 'Roboto', sans-serif;
+}
+.input{
+    width: 80%;
+    padding: 0.6rem;
+    background-color: #fafafa;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin: 0.2rem 0;
+    color: #444;;
+    font-family: 'Roboto', sans-serif;
+}
+.inputBtn{
+    width: 80%;
+    padding: 0.5rem;
+    background-color: #4bb4f8;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0.7rem;
+    font-weight: 800;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.line{
+    border-top: 1px solid lightgrey;
+    margin: 0 1rem;
+    width: 33%;
+}
+.orSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #8e8e8e;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+    font-family: 'Roboto', sans-serif;
+}
+.facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #385185;
+    font-size: 0.9rem;
+    margin: 1rem;
+    cursor: pointer;
+    font-weight: 800;
+}
+.forgetPassword{
+    font-family: 'Roboto', sans-serif;
+    color: #324a80;
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+.bottom{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 ;
+    border-radius: 1px;
+    border: 1px solid lightgrey;
+    height: 4rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    
+}
+.signup{
+    color: #4bb4f8;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.getApp{
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.getAppIcons{
+    display: flex;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.getAppIcons img{
+    height: 2.5rem;
+    cursor: pointer;
+    margin: 0 0.2rem;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    color: grey;
+    margin: 3rem 12rem;
+}
+.footer p{
+    margin:0.6rem;
+}
+.check{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    margin: 1rem 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7rem;
+}
+@media only screen and (max-width: 800px) {
+    .check{
+        width: 65%;
+    }
+    .left{
+        display: none;
+    }
+    .right{
+        width: 100%;
+        margin: 0;
+    }
+    .footer{
+        margin: 1rem;
+    }
+    .top{
+        height: 29rem;
+        border: none;
+        margin: 0;
+    }
+    .bottom{
+        border: none;
+    }
+    .input{
+        width: 65%;
+    }
+    .inputBtn{
+        width: 65%;
+    }
+    .line{
+        width: 25%;
+    }
+}
